@@ -142,3 +142,22 @@ img {
    flex: 1 1 160px;
    margin: 0 10px;
 }
+
+/* PRODUTOS ----------------- */
+
+.produtos{
+   max-width: 960px;
+   margin: 60px auto;
+
+}
+
+.produtos h1{
+   font-size: 3.0em;
+   color: rgb(27, 27, 27);
+   margin: 0 10px 60px 10px;
+}
+
+.produtos-container{
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+}
