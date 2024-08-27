@@ -184,3 +184,80 @@ img {
 .blue {
    border-top: 12px solid rgb(26, 189, 201);
 }
+
+/* PREÇO ------------------- */
+
+.preco {
+   background: rgb(224, 224, 224);
+   padding: 60px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: flex-end;
+}
+
+.preco-item {
+   flex: 1 1 260px;
+   padding: 20px;
+   margin: 10px;
+   border: 4px solid white;
+}
+
+.preco-item h2 {
+   font-size: 3em;
+   color: rgb(146, 146, 146);
+   text-align: center;
+   margin-top: 20px;
+}
+
+.preco-item span {
+   /* Lembrando que SPAN sempre é um display inline. Colocamos block porque senão não funciona margin, padding etc.. */
+   display: block;
+   font-size: 3em;
+   font-weight: bold;
+   max-width: 300px;
+   margin: 20px auto;
+   padding: 10px 0;
+   border-top: 4px solid white;
+   border-bottom: 4px solid white;
+}
+
+.preco-item sup {
+   font-size: 1.5rem;
+}
+
+.preco-item ul {
+   max-width: 300px;
+   margin: 20px auto;
+   font-size: 1.25em;
+   font-style: italic;
+   color: rgb(146, 146, 146);
+}
+
+.preco-item li{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.preco-item li::after {
+   content: "";
+   display: block;
+   background: rgb(225, 21, 86);
+   width: 6px;
+   height: 6px;
+   border-radius: 50%;
+}
+
+.preco-item a{
+   display: block;
+   max-width: 300px;
+   font-size: 3em;
+   font-weight: bold;
+   border: 6px solid black;
+   margin: 20px auto;
+   padding: 10px 0;
+   color: black;
+   text-align: center;
+
+}
