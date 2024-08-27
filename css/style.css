@@ -233,7 +233,7 @@ img {
    color: rgb(146, 146, 146);
 }
 
-.preco-item li{
+.preco-item li {
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -249,7 +249,7 @@ img {
    border-radius: 50%;
 }
 
-.preco-item a{
+.preco-item a {
    display: block;
    max-width: 300px;
    font-size: 3em;
@@ -259,5 +259,60 @@ img {
    padding: 10px 0;
    color: black;
    text-align: center;
+}
 
+/* QUALIDADE ----------------- */
+
+.qualidade {
+   max-width: 960px;
+   display: flex;
+   flex-wrap: wrap;
+   margin: 60px auto;
+}
+
+.qualidade-item {
+   flex: 1 1 300px;
+   margin: 20px 10px;
+}
+
+.qualidade-item h2 {
+   font-size: 2.25em;
+   color: rgb(38, 38, 38);
+   margin-bottom: 20px;
+}
+
+.qualidade-item h2::before {
+   content: "";
+   display: inline-block;
+   width: 8px;
+   height: 30px;
+   margin-right: 10px;
+   background: greenyellow;
+   /* Esse background é só pra eu ter uma referencia */
+}
+
+/*
+---- DESSA FORMA ESTARÍAMOS FALANDO DIRETAMENTE COM CADA ITEM, NESTE CASO ITEM 1 E 4 
+.qualidade-item:nth-of-type(1) h2::before,
+.qualidade-item:nth-of-type(4) h2::before{
+background: rgb(166, 51, 228);
+}
+ */
+
+.qualidade-item:nth-of-type(3n+1) h2::before{
+   background: rgb(166, 51, 228);
+}
+
+.qualidade-item:nth-of-type(3n+2) h2::before{
+   background: rgb(137, 228, 51);
+}
+
+.qualidade-item:nth-of-type(3n+3) h2::before{
+   background: rgb(228, 187, 51);
+}
+
+.qualidade-item p {
+   font-size: 1.25em;
+   line-height: 1.4;
+   color:rgb(15, 15, 15);
 }
